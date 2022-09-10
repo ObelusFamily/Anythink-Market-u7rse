@@ -10,4 +10,7 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 
 ## First setup
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Run `docker-compose up` from the project root directory -> if Docker is working correctly, the backend should be running and able to connect to your local database
+2. Test this by pointing your browser to http://localhost:3000/api/ping -> you should see the following message `{"msg":"Pong! Seems like Everythink is working, great job!"}`
+3. Check the frontend and make sure it’s connected to the backend. If everything is working properly, you’ll be able to create a new user on http://localhost:3001/register 
+4. Complete the signup -- choose a cool nickname and everything ;)
